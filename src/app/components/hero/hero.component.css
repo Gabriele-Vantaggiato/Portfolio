@@ -1,0 +1,14 @@
+.clip-path-diagonal {
+  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-diagonal-mobile {
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 640px) {
+  .clip-path-diagonal {
+    clip-path: none;
+  }
+}
+

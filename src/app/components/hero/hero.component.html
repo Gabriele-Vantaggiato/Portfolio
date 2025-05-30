@@ -1,0 +1,63 @@
+<div class="bg-white">
+  <!-- Diagonal split container -->
+  <div class="h-auto h-screen sm:h-[75vh] flex bg-gray-300">
+    <!-- Left content area (40%) -->
+    <div class="hidden sm:flex justify-center z-5 flex-3">
+      <div class="space-y-3 ps-10 flex flex-col justify-center">
+        <h1 class="text-3xl sm:text-3xl">Hi, I am</h1>
+        <h2 class="text-6xl font-bold sm:text-5xl">Gabriele Vantaggiato</h2>
+        <h3 class="text-2xl text-gray-600 font-bold sm:text-2xl">Senior Web Developer</h3>
+      </div>
+    </div>
+
+    <!-- Right image area (60%) with diagonal -->
+    <div class="bg-gray-100 clip-path-diagonal"></div>
+    <!-- Image placeholder -->
+    <div class="flex bg-black flex-col justify-between flex-4 clip-path-diagonal">
+      <div class="flex justify-end sm:justify-center px-10 sm:px-0">
+        <div
+          class="hidden sm:flex w-full bg-black p-3 sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center ps-10 mt-10">
+          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> About me</button>
+          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Skills</button>
+          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Portfolio</button>
+          <div class="w-full lg:w-auto xl:w-auto flex justify-center">
+            <button hlmBtn variant="secondary" class="rounded-4xl mx-1 cursor-pointer text-xl sm:text-lg"> CONTACT ME
+            </button>
+          </div>
+        </div>
+      </div>
+      <app-navbar class="ps-10 mt-10 sm:hidden"></app-navbar>
+      <img src="./assets/imgs/business_man.png" class="w-fit h-fit self-center"/>
+    </div>
+  </div>
+</div>
+
+<!-- IT BERRIES full-width section -->
+<div class="hidden sm:flex bg-zinc-800 h-fit sm:h-[25vh] text-white py-6 px-2 w-full">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">IT BERRIES</h2>
+    <p class="text-gray-300 mb-6 text-md leading-relaxed">
+      Nulla in velit o metus rhinosu tempus. Nulla omgue nulla vel sem varius finibus. Sed ornare ali amet tram sed
+      viverra. In vel uma quis libero viverra focilisis ut ac eit. Morbi commodo, eros in dignissim tempus, locus odio
+      numum ougue. To tempur sem magna ouis tellus. Eliam enim eros; suscipit eu semper, o dictam ali amet elit. Iulner
+      reprises nisi aget enim gravida focilisis. Pellentesque borsari varius turpis vel pharetra. Ut enis justo,
+      consequat vitae elementum temper, aucuniam nec eros.
+    </p>
+  </div>
+</div>
+<!-- div overlay mobile -->
+<div
+  class="sm:hidden absolute bottom-0 w-full px-6 py-6 text-white flex justify-between items-end flex-wrap bg-zinc-800/80 clip-diagonal-mobile min-h-[200px]">
+  <div>
+    <p class="text-sm">Hi, I am</p>
+    <h1 class="text-2xl font-bold">Gabriele Vantaggiato</h1>
+    <p class="text-xs text-gray-300 mt-1">
+      Senior Front-end Developer
+    </p>
+  </div>
+  <div class="flex flex-col gap-7">
+    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="email"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/github.png" alt="github"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="linkedin"/></a>
+  </div>
+</div>
