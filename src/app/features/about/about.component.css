@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.vertical-black-bar {
+  @apply h-[30px] w-[3px] bg-black;
+}
+
+.div-section-spaced {
+  @apply flex justify-center mt-15;
+}

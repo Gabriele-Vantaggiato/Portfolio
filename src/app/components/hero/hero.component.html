@@ -17,9 +17,14 @@
       <div class="flex justify-end sm:justify-center px-10 sm:px-0">
         <div
           class="hidden sm:flex w-full bg-black p-3 sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center ps-10 mt-10">
-          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> About me</button>
-          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Skills</button>
-          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Portfolio</button>
+          <!--          TODO: dinamicizzare le route e componentizzare il bottone -->
+          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]="'./aboutme'"> About
+            me
+          </button>
+          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]="'./skills'">
+            Skills
+          </button>
+          <!--          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]=""> Portfolio</button>-->
           <div class="w-full lg:w-auto xl:w-auto flex justify-center">
             <button hlmBtn variant="secondary" class="rounded-4xl mx-1 cursor-pointer text-xl sm:text-lg"> CONTACT ME
             </button>
