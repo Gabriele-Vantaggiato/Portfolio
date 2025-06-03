@@ -1,0 +1,6 @@
+.hover-active:hover {
+  background-color: var(--hover-link-box);
+  color: white;
+  transition: 0.5s;
+  border-color: var(--hover-link-box);
+}

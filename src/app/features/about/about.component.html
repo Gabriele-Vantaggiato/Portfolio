@@ -1,8 +1,4 @@
-<div class="div-section-spaced">
-  <div class="border-5 border-black p-5 w-90 text-center">
-    <span class="font-bold text-2xl tracking-[7px]">ABOUT ME</span>
-  </div>
-</div>
+<app-link-box [title]="'ABOUT ME'"></app-link-box>
 <div class="div-section-spaced">
     <p> Qualcosa su di me: cagate</p>
 </div>
@@ -16,4 +12,10 @@
 <div class="div-section-spaced">
   <img ngSrc="./assets/imgs/black-separator-1.png" alt="black_separator" height="12" width="170"/>
 </div>
-
+<div class="div-section-spaced flex-col sm:flex-row">
+  @for (s of services; track s.id) {
+    <app-services [bgImg]="s.imgSrc" [serviceTitle]="s.title" [description]="s.description" class="mt-5 sm:mt-0">
+    </app-services>
+  }
+</div>
+<app-link-box [title]="'SKILLS'" [redirectUrl]="'skills'"></app-link-box>
