@@ -13,6 +13,12 @@ export const INIT_SERVICE: IServices[] = [
     title: 'maintenance',
     imgSrc: './assets/imgs/maintenance_service.png',
     description: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job"
+  },
+  {
+    id: "efficiency",
+    title: 'efficiency',
+    imgSrc: './assets/imgs/maintenance_service.png',
+    description: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job"
   }
 ]
 

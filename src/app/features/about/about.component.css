@@ -1,5 +1,3 @@
 @reference "tailwindcss";
 
-.vertical-black-bar {
-  @apply h-[30px] w-[3px] bg-black;
-}
+
