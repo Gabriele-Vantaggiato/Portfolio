@@ -1,14 +1,15 @@
 <div class="w-full bg-black p-3 justify-center sm:flex hidden">
-    <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> About me</button>
-    <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Skills</button>
-    <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg"> Portfolio</button>
-    <button hlmBtn variant="secondary" class="rounded-4xl mx-1 cursor-pointer text-xl sm:text-lg"> CONTACT ME</button>
+  @for (r of routes; track $index;) {
+    @if (r.path?.length) {
+      <app-navbutton [text]="r.data ? r.data['title'] : 'No title'" [url]="r.path ? r.path : ''"></app-navbutton>
+    }
+  }
 </div>
 
 
-<div class="flex justify-end sm:hidden">
+<div class="flex justify-end sm:hidden mb-20">
   <!-- Top bar -->
-  <div class="fixed top-0 left-0 w-full z-100 flex justify-end items-center p-4 bg-transparent">
+  <div class="fixed top-0 left-0 w-full z-100 flex justify-end items-center p-4 bg-black">
     <!--    <div class="text-white font-bold text-xl">-->
     <!--      <img src="assets/logo.svg" alt="Logo" class="h-6"/>-->
     <!--    </div>-->
@@ -20,10 +21,10 @@
   </div>
   <!-- Full screen menu -->
   @if (isOpen) {
-    <div class="fixed inset-0 bg-black/60 z-30" (click)="toggleMenu()"></div>
+    <div class="fixed inset-0 bg-black/80 z-30" (click)="toggleMenu()"></div>
     <div
       @slideDown
-      class="fixed top-20 left-0 w-full h-[35vh] z-40 bg-black/90 text-white flex flex-col items-center justify-center space-y-6 text-lg font-semibold shadow-md rounded-b-2xl">
+      class="fixed top-15 left-0 w-full h-[45vh] z-40 bg-black/80 text-white flex flex-col items-center justify-center space-y-6 text-lg font-semibold shadow-md rounded-b-2xl">
       @for (r of routes; track $index; let last = $last) {
         @if (r.path?.length) {
           <app-navitem (toggleMenu)="toggleMenu()" [href]="r.path ? r.path : ''" [title]="r.data ? r.data['title'] : 'No title'" [last]="last"></app-navitem>

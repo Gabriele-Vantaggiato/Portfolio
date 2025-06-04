@@ -13,4 +13,8 @@ import NavbarComponent from './components/core/navbar/navbar.component';
 })
 export class AppComponent {
   router = inject(Router)
+
+  onActivate(event: any) {
+    window.scrollTo(0, 0);
+  }
 }

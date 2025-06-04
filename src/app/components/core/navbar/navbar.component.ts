@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
-import {HlmButtonDirective} from '@spartan-ng/ui-button-helm';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {NavitemComponent} from './navitem/navitem.component';
 import {routes} from '../../../app.routes';
+import {NavbuttonComponent} from './navbutton/navbutton.component';
 
 @Component({
   selector: 'app-navbar',
   imports: [
-    HlmButtonDirective,
     NavitemComponent,
+    NavbuttonComponent,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
