@@ -1,5 +1,9 @@
 import {IServices} from './models/IServices';
 import {ISkill} from './models/ISkill';
+import {ICertifications} from './models/ICertifications';
+import {inject, Sanitizer} from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
+import {DOCUMENT} from '@angular/common';
 
 export const INIT_SERVICE: IServices[] = [
   {
@@ -61,4 +65,10 @@ export const INIT_SKILL: ISkill[] = [
   {id: 'typescript', imgSrc: default_skills_path + 'typescript.svg', name: 'Typescript', competence: "USING"},
   {id: 'vercel', imgSrc: default_skills_path + 'vercel.svg', name: 'Vercel', competence: "USING"},
   {id: 'wordpress', imgSrc: default_skills_path + 'wordpress.svg', name: 'Wordpress', competence: "USED"}
+]
+
+const default_certifications_path = './assets/imgs/certifications/';
+export const INIT_CERTIFICATIONS: ICertifications[] = [
+  { id: 'angular_base', name: 'Angular Base', src: default_certifications_path + 'angular_basic_certificate.pdf'},
+  { id: 'angular_intermediate', name: 'Angular Intermediate', src: default_certifications_path + 'angular_intermediate_certificate.pdf'}
 ]
