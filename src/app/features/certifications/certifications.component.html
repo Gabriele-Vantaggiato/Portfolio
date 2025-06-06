@@ -1,31 +1,13 @@
 <app-link-box [title]="'CERTIFICATIONS'"></app-link-box>
-<div class="div-section-spaced xl:mt-30">
-  <div class="vertical-black-bar"></div>
-  <span class="text-center text-2xl font-semibold tracking-[5px] mx-10"> FRONT END </span>
-  <div class="vertical-black-bar"></div>
-</div>
-<div class="div-section-spaced">
-  <div class="w-full px-10 grid grid-cols-1 lg:grid-cols-2">
-    @for (c of certifications; track c.id) {
-      <div class="flex w-full justify-center px-10">
-        <pdf-viewer
-          [src]="c.src"
-          [render-text]="true"
-          [fit-to-page]="true"
-          class="h-100 w-100"
-          [autoresize]="true"
-          (click)="openCertificationModal()"
-        ></pdf-viewer>
+<app-certifications-category [title]="'FRONT END'" [certifications]="frontEndCertification"></app-certifications-category>
+<app-certifications-category [title]="'BACK END'" [certifications]="backendCertification"></app-certifications-category>
 
-        @if (showModal) {
-          <app-certification-modal
-            [pdfSrc]="currentModalPdfSrc"
-            (close)="closeCertificationModal()">
-          </app-certification-modal>
-        }
-      </div>
-    }
-  </div>
+<div class="div-section-spaced">
+  <app-black-separator></app-black-separator>
+</div>
+<app-link-box [title]="'PORTFOLIO'"></app-link-box>
+<div class="mb-5">
+
 </div>
 
 

@@ -67,8 +67,21 @@ export const INIT_SKILL: ISkill[] = [
   {id: 'wordpress', imgSrc: default_skills_path + 'wordpress.svg', name: 'Wordpress', competence: "USED"}
 ]
 
-const default_certifications_path = './assets/imgs/certifications/';
+const default_img_certifications_path = './assets/imgs/certifications/';
+const default_pdf_certifications_path = './assets/pdf/certifications/';
 export const INIT_CERTIFICATIONS: ICertifications[] = [
-  { id: 'angular_base', name: 'Angular Base', src: default_certifications_path + 'angular_basic_certificate.pdf'},
-  { id: 'angular_intermediate', name: 'Angular Intermediate', src: default_certifications_path + 'angular_intermediate_certificate.pdf'}
+  {
+    id: 'angular_base',
+    name: 'Angular Base',
+    imgSrc: default_img_certifications_path + 'angular_basic_certificate.jpg',
+    pdfSrc: default_pdf_certifications_path + 'angular_basic_certificate.pdf',
+    category: 'fe'
+  },
+  {
+    id: 'angular_intermediate',
+    name: 'Angular Intermediate',
+    imgSrc: default_img_certifications_path + 'angular_intermediate_certificate.jpg',
+    pdfSrc: default_pdf_certifications_path + 'angular_intermediate_certificate.pdf',
+    category: 'fe'
+  }
 ]

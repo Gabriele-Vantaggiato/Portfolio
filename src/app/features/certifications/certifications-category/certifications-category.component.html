@@ -1,0 +1,21 @@
+<div class="div-section-spaced xl:mt-30">
+  <div class="vertical-black-bar"></div>
+  <span class="text-center text-2xl font-semibold tracking-[5px] mx-10"> {{title}} </span>
+  <div class="vertical-black-bar"></div>
+</div>
+<div class="div-section-spaced">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    @for (c of certifications(); track c.id) {
+      <a [href]="c.pdfSrc">
+        <img [src]="c.imgSrc" class="w-90 h-75 sm:w-100 sm:h-80 md:w-100 md:h-75 lg:w-130 lg:h-100"/>
+      </a>
+    } @empty {
+      <div class="col-span-2 items-center text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto w-18 h-18 mb-4 text-zinc-600">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        <p class="text-md text-gray-500">Currently in the works! Check back soon for updates.</p>
+      </div>
+    }
+  </div>
+</div>
