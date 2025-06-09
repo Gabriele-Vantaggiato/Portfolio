@@ -1,6 +1,5 @@
-export interface IServices {
-  id: string;
-  title: string;
-  imgSrc: string;
+import {IGenericWithImage} from './IGenericWithImage';
+
+export interface IServices extends IGenericWithImage {
   description: string;
 }

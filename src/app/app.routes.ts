@@ -6,5 +6,6 @@ export const routes: Routes = [
   {path: 'about', data: {title: 'About me'}, loadComponent: () => import('./features/about/about.component')},
   {path: 'skills', data: {title: 'Skills'}, loadComponent: () => import('./features/skill/skill.component')},
   {path: 'certifications', data: {title: 'Certifications'}, loadComponent: () => import('./features/certifications/certifications.component')},
+  {path: 'experience', data: {title: 'Experience'}, loadComponent: () => import('./features/experience/experience.component')},
   {path: 'contact', data: {title: 'Contact me'}, loadComponent: () => import('./features/contact/contact.component')},
 ];
