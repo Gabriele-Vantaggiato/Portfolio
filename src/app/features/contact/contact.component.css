@@ -1,0 +1,11 @@
+@reference "tailwindcss";
+
+.input-contact {
+  @apply p-3 w-150;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+}
+
+.input-contact:focus {
+  outline: none;
+}

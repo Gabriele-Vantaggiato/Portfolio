@@ -93,6 +93,7 @@ export const INIT_WORK_EXPERIENCE: IExperience[] = [
     period: "2019 - 2022",
     description: [
       'Implementato test automatizzati (unit test e end-to-end test) per garantire l\'affidabilità e la qualità del software utilizzando Cypress e Jasmine',
+      'Manotenuto Back end utilizzando Express',
       'Collaborato con designer e product manager per tradurre i requisiti di business in funzionalità tecniche efficaci',
       'Progettato e sviluppato componenti in Angular 12 riutilizzabili e altamente modulari, riducendo il tempo di sviluppo e migliorando la manutenzione del codice',
       'Collaborato con team esterno di backend per integrare API e servizi RESTful, assicurando la coerenza dei dati e l\'ottimizzazione delle performance',
@@ -108,6 +109,7 @@ export const INIT_WORK_EXPERIENCE: IExperience[] = [
       'Implementato soluzioni di state management con NgRx per garantire una gestione efficiente e reattiva dello stato dell\'applicazione',
       'Sviluppato interfacce utente responsive e accessibili, seguendo le best practices di UX/UI design',
       'Realizzato applicazioni web dinamiche utilizzando React 17 e Redux, migliorando l\'interattività e l\'esperienza utente',
+      'Collaborato con un team di backend manotenendo quest\'ultimo utilizzando SpringBoot',
       'Sviluppata e integrata i18n per applicativo multilingua al fine di migliorare l\'accessibilità di quest\'ultimo'
     ]
   },
@@ -117,8 +119,10 @@ export const INIT_WORK_EXPERIENCE: IExperience[] = [
     period: "Giugno 2024 - Novembre 2024",
     description: [
       'Curata la parte software di una nuova startup per lanciarsi sul mercato',
-      'Refactor sito wordpress in modo da generare più conversioni e assicurare efficienza e scalabilità',
+      'Refactor sito wordpress e curata la SEO in modo da generare più conversioni e assicurare efficienza e scalabilità',
       'Integrato sistema di pagamento con stripe, klarna e paypal',
+      'Implementato plugin Anti DDoS per garantire maggiore sicurezza',
+      'Ottimizzazione immagini e implementato sistema di caching per rendering più veloci'
     ]
   }
 ]
