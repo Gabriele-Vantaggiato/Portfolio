@@ -17,11 +17,9 @@
     </div>
   } @placeholder {
     <div class="flex flex-row animate-pulse justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-7 mt-10">
-      <span class="skeleton-icon"></span>
-      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
-      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
-      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
-      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+      @for (s of [0,1,2,3]; track s) {
+        <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+      }
     </div>
   }
 </div>

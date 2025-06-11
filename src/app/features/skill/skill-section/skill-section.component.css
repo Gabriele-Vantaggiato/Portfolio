@@ -1,5 +1,5 @@
-@reference "tailwind"
+@reference "tailwind";
 
 .skeleton-icon {
-  @apply size-12 block bg-gray-200 rounded-full dark:bg-neutral-700
+  @apply ;
 }
