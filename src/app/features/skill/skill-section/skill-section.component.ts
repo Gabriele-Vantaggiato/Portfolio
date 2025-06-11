@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, input, Input} from '@angular/core';
 import {ISkill} from '../../../models/ISkill';
-import {JsonPipe, NgClass, NgOptimizedImage, UpperCasePipe} from '@angular/common';
+import {UpperCasePipe} from '@angular/common';
 
 @Component({
   selector: 'app-skill-section',

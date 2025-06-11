@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.toast-default {
+  @apply max-w-xs text-sm text-white rounded-xl shadow-lg transition
+}

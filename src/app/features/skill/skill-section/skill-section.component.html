@@ -6,12 +6,23 @@
       <div class="vertical-black-bar"></div>
     </div>
   }
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 mt-5 lg:mt-10">
-    @for (s of skills(); track s.id) {
-      <div class="mt-5 flex flex-col items-center">
-        <img [src]="s.imgSrc" class="h-15 w-15 mb-2 object-contain p-1" [alt]="s.title" />
-        <span class="text-center w-full">{{ s.title }}</span>
-      </div>
-    }
-  </div>
+  @defer (on viewport) {
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 mt-5 lg:mt-10">
+      @for (s of skills(); track s.id) {
+        <div class="mt-5 flex flex-col items-center">
+          <img [src]="s.imgSrc" class="h-15 w-15 mb-2 object-contain p-1" [alt]="s.title"/>
+          <span class="text-center w-full">{{ s.title }}</span>
+        </div>
+      }
+    </div>
+  } @placeholder {
+    <div class="flex flex-row animate-pulse justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-7 mt-10">
+      <span class="skeleton-icon"></span>
+      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+      <span class="size-12 block bg-gray-200 rounded-full dark:bg-neutral-700"></span>
+    </div>
+  }
 </div>
+

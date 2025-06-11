@@ -16,7 +16,6 @@ export class EmailJSService {
   }
 
   sendEmail(templateParams: Record<string, unknown>): Observable<any> {
-    // emailJS.send restituisce una Promise, usiamo 'from' di RxJS per convertirla in Observable
     return from(emailJS.send(this.SERVICE_ID, this.TEMPLATE_ID, templateParams));
   }
 }
