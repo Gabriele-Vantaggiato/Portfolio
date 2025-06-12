@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-personal-description',
+  imports: [],
+  templateUrl: './personal-description.component.html',
+  styleUrl: './personal-description.component.css'
+})
+export class PersonalDescriptionComponent {
+
+}

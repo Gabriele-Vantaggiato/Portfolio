@@ -6,21 +6,23 @@ import {IExperience} from './models/IExperience';
 export const INIT_SERVICE: IServices[] = [
   {
     id: "development",
-    title: 'development',
+    title: 'Sviluppo',
     imgSrc: './assets/imgs/develop_service.png',
-    description: "I can develop the site based on your needs and suggestions. I can also develop the site from scratch and consult you during the job"
+    description: "Posso tradurre e implementare dei requisiti di un sito web secondo le proprie esigenze e suggerimenti, implementando interfacce grafiche da mockup"
   },
   {
     id: "maintenance",
-    title: 'maintenance',
+    title: 'Manutenzione',
     imgSrc: './assets/imgs/maintenance_service.png',
-    description: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job"
+    description: "Posso manutenere il progetto migliorandone l'affidabilità grazie all'esperienza pluriennale in risoluzione bug, ma soprattutto grazie all'implementazione di test " +
+      "unitari e e2e"
   },
   {
     id: "efficiency",
-    title: 'efficiency',
+    title: 'Efficienza',
     imgSrc: './assets/imgs/maintenance_service.png',
-    description: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job"
+    description: "Una delle mie parole chiave è efficienza. La cosa migliore per un sito web è essere efficiente e scalabile su ogni piattaforma. Grazie all'implementazione di nuove funzionalità" +
+      " di Angular e modularizzando correttamente il progetto posso raggiungere standard di performance elevati"
   }
 ]
 

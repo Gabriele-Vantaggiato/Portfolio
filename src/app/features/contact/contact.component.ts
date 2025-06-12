@@ -4,6 +4,9 @@ import {BlackSeparatorComponent} from '../../components/shared/black-separator/b
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {EmailJSService} from '../../services/emailjs.service';
 import {ToastService} from '../../services/toast.service';
+import {
+  PersonalDescriptionComponent
+} from '../../components/shared/personal-description/personal-description.component';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +14,7 @@ import {ToastService} from '../../services/toast.service';
     LinkBoxComponent,
     BlackSeparatorComponent,
     ReactiveFormsModule,
+    PersonalDescriptionComponent,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
