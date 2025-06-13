@@ -1,11 +1,11 @@
-<app-link-box [title]="'EXPERIENCE'"></app-link-box>
+<app-link-box [title]="'EXPERIENCE.TITLE'"></app-link-box>
 <div class="div-section-spaced">
   <app-black-separator></app-black-separator>
 </div>
 <app-timeline [experience]="experiences"></app-timeline>
 @defer (on viewport) {
-  <app-link-box [title]="'CONTACT ME'" [redirectUrl]="'contact'"></app-link-box>
+  <app-link-box [title]="'CONTACT_ME.TITLE'" [redirectUrl]="'contact'"></app-link-box>
 } @placeholder {
-  <span> Contact me </span>
+  <span> {{ 'CONTACT_ME.TITLE' | translate }} </span>
 }
 

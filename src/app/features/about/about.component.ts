@@ -8,6 +8,7 @@ import {BlackSeparatorComponent} from '../../components/shared/black-separator/b
 import {
   PersonalDescriptionComponent
 } from '../../components/shared/personal-description/personal-description.component';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
@@ -16,7 +17,8 @@ import {
     LinkBoxComponent,
     BlackSeparatorComponent,
     NgClass,
-    PersonalDescriptionComponent
+    PersonalDescriptionComponent,
+    TranslatePipe
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'

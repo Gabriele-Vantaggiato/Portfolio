@@ -7,6 +7,7 @@ import {ToastService} from '../../services/toast.service';
 import {
   PersonalDescriptionComponent
 } from '../../components/shared/personal-description/personal-description.component';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -15,6 +16,7 @@ import {
     BlackSeparatorComponent,
     ReactiveFormsModule,
     PersonalDescriptionComponent,
+    TranslatePipe,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

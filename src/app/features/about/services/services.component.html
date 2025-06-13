@@ -1,7 +1,7 @@
 <div class="px-10 xl:px-30">
   <div [style.background-image]="'url(' + bgImg + ')'" class="bg-no-repeat h-[11vh] sm:h-[8vh] flex relative right-10">
-    <span class="text-xl font-bold h-fit my-auto ms-10">{{ serviceTitle | uppercase }} </span>
+    <span class="text-xl font-bold h-fit my-auto ms-10">{{ serviceTitle | translate | uppercase }} </span>
   </div>
-  <p class="text-lg"> {{ description }} </p>
+  <p class="text-lg"> {{ description | translate }} </p>
 </div>
 

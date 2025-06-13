@@ -1,4 +1,4 @@
-<app-link-box [title]="'CONTACT'"></app-link-box>
+<app-link-box [title]="'CONTACT_ME.TITLE'"></app-link-box>
 <div class="div-section-spaced">
   <app-personal-description></app-personal-description>
 </div>
@@ -8,36 +8,36 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="div-section-spaced">
     <div class="flex flex-col">
-      <input placeholder='Inserisci la tua email*' type='email' class="input-contact" formControlName="from_email"/>
+      <input [placeholder]="'CONTACT_ME.PLACEHOLDERS.EMAIL' | translate" type='email' class="input-contact" formControlName="from_email"/>
       @if (contactForm.get('from_email')?.value && contactForm.get('from_email')?.invalid && contactForm.get('from_email')?.touched) {
-        <p class="text-red-600 mt-2"> L' email non è valida </p>
+        <p class="text-red-600 mt-2">  {{'CONTACT_ME.ERROR_MESSAGES.EMAIL.INVALID' | translate}}</p>
       } @else if (!contactForm.get('from_email')?.value && contactForm.get('from_email')?.touched) {
-        <p class="text-red-600 mt-2"> L' email è un campo obbligatorio</p>
+        <p class="text-red-600 mt-2"> {{'CONTACT_ME.ERROR_MESSAGES.EMAIL.REQUIRED' | translate}}</p>
       }
     </div>
   </div>
   <div class="div-section-spaced">
     <div class="flex flex-col">
-      <input placeholder="Inserisci l'oggetto*" type='text' class="input-contact" formControlName="from_subject"/>
+      <input [placeholder]="'CONTACT_ME.PLACEHOLDERS.SUBJECT' | translate" type='text' class="input-contact" formControlName="from_subject"/>
       @if (contactForm.get('from_subject')?.invalid && contactForm.get('from_subject')?.touched) {
-        <p class="text-red-600 mt-2"> L'oggetto è un campo obbligatorio</p>
+        <p class="text-red-600 mt-2"> {{'CONTACT_ME.ERROR_MESSAGES.SUBJECT.REQUIRED' | translate}}</p>
       }
     </div>
   </div>
   <div class="div-section-spaced">
     <div class="flex flex-col">
-      <textarea placeholder="Inserisci il tuo messaggio" type='text' class="input-contact"
+      <textarea [placeholder]="'CONTACT_ME.PLACEHOLDERS.MESSAGE' | translate" type='text' class="input-contact"
                 formControlName="from_message"></textarea>
       @if (contactForm.get('from_message')?.invalid && contactForm.get('from_message')?.touched) {
-        <p class="text-red-600 mt-2"> Il messaggio è un campo obbligatorio</p>
+        <p class="text-red-600 mt-2"> {{'CONTACT_ME.ERROR_MESSAGES.MESSAGE.REQUIRED' | translate}}</p>
       }
     </div>
   </div>
   <div class="div-section-spaced">
     <div class="vertical-black-bar"></div>
-    <button class="font-bold mx-10 cursor-pointer" type="submit"> SUBMIT</button>
+    <button class="font-bold mx-10 cursor-pointer" type="submit"> {{'CONTACT_ME.SUBMIT_BTN' | translate}}</button>
     <div class="vertical-black-bar"></div>
   </div>
 </form>
 
-<app-link-box [title]="'HOME'" [redirectUrl]="'home'"></app-link-box>
+<app-link-box [title]="'HOME.TITLE'" [redirectUrl]="'home'"></app-link-box>

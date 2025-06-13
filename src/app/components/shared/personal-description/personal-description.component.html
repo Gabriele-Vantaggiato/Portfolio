@@ -1,24 +1,10 @@
 <div class="mx-20">
-  <p class="mb-5">
-    Ho maturato circa sei anni di esperienza nel campo dello sviluppo web. La mia carriera professionale è iniziata nel 2019 come Junior Developer, <br />
-    e dopo diversi anni di impegno, ho avuto l'opportunità di essere promosso a un ruolo Senior. <br/>
+  <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION1' | translate">
   </p>
-  <p class="mb-5">
-    La maggior parte della mia esperienza si concentra su Angular, TypeScript e RxJS. <br/>
-    Recentemente, ho approfondito le versioni da 16 a 19 di Angular, e non vedo l'ora di mettere in pratica queste nuove conoscenze. <br/>
-    Oltre a ciò, ho utilizzato React, Redux e NgRx in diverse applicazioni. <br/>
-  </p>
+  @if (!shortDesc) {
+    <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION2' | translate"></p>
 
-  <p class="mb-5">
-    La mia più grande soddisfazione risiede nella creazione di interfacce fluide ed efficienti. Mi assicuro che il mio codice sia pulito e riutilizzabile, <br/>
-    ponendo particolare enfasi su performance e User Experience (UX). <br/>
-    Il mio obiettivo è che i prodotti che realizziamo siano impeccabili e offrano un'esperienza utente piacevole. <br/>
-  </p>
-  <p>
-    Nelle mie precedenti esperienze, ho lavorato con metodologie Scrum e Agile. <br/>
-    Mi piace far parte di un'organizzazione in cui i membri del team discutono e condividono idee motivo per cui, a mio avviso, <br/>
-    le code review sono uno dei modi migliori per migliorare sia le competenze del team che la qualità del prodotto stesso, <br/>
-    aiutando gli altri a scrivere codice di qualità superiore e imparando sempre qualcosa di nuovo. <br/>
-    Sarei lieto di unirmi a un team dove poter crescere professionalmente e contribuire al vostro entusiasmante progetto. <br/>
-  </p>
+    <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION3' | translate"></p>
+    <p [innerHTML]="'PERSONAL_DESCRIPTION.SECTION4' | translate"></p>
+  }
 </div>

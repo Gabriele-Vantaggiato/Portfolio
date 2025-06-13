@@ -1,14 +1,16 @@
-import {Component} from '@angular/core';
+import {booleanAttribute, Component, Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {NavitemComponent} from './navitem/navitem.component';
 import {routes} from '../../../app.routes';
 import {NavbuttonComponent} from './navbutton/navbutton.component';
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   imports: [
     NavitemComponent,
     NavbuttonComponent,
+    NgClass,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
@@ -60,6 +62,8 @@ import {NavbuttonComponent} from './navbutton/navbutton.component';
   ]
 })
 export default class NavbarComponent {
+
+  @Input({transform: booleanAttribute}) isHero = false;
 
   isOpen = false;
   protected readonly routes = routes;

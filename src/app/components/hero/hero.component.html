@@ -4,7 +4,7 @@
     <!-- Left content area (40%) -->
     <div class="hidden sm:flex justify-center z-5 flex-3">
       <div class="space-y-3 ps-10 flex flex-col justify-center">
-        <h1 class="text-3xl sm:text-3xl">Hi, I am</h1>
+        <h1 class="text-3xl sm:text-3xl">{{'HOME.HI' | translate }}</h1>
         <h2 class="text-6xl font-bold sm:text-5xl">Gabriele Vantaggiato</h2>
         <h3 class="text-2xl text-gray-600 font-bold sm:text-2xl">Senior Web Developer</h3>
       </div>
@@ -17,18 +17,7 @@
       <div class="flex justify-end sm:justify-center px-10 sm:px-0">
         <div
           class="hidden sm:flex w-full bg-black p-3 sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center ps-10 mt-10">
-          <!--          TODO: dinamicizzare le route e componentizzare il bottone -->
-          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]="'../aboutme'"> About
-            me
-          </button>
-          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]="'../skills'">
-            Skills
-          </button>
-          <!--          <button hlmBtn class="bg-transparent mx-1 cursor-pointer text-xl sm:text-lg" [routerLink]=""> Portfolio</button>-->
-          <div class="w-full lg:w-auto xl:w-auto flex justify-center">
-            <button hlmBtn variant="secondary" class="rounded-4xl mx-1 cursor-pointer text-xl sm:text-lg"> CONTACT ME
-            </button>
-          </div>
+          <app-navbar isHero></app-navbar>
         </div>
       </div>
       <app-navbar class="ps-10 mt-10 sm:hidden"></app-navbar>
@@ -40,13 +29,9 @@
 <!-- IT BERRIES full-width section -->
 <div class="hidden sm:flex bg-zinc-800 h-fit sm:h-[25vh] text-white py-6 px-2 w-full">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-2xl font-bold mb-6">IT BERRIES</h2>
+    <h2 class="text-2xl font-bold mb-6 mx-20">{{"HOME.SOMETHING_ABOUT_ME" | translate}}</h2>
     <p class="text-gray-300 mb-6 text-md leading-relaxed">
-      Nulla in velit o metus rhinosu tempus. Nulla omgue nulla vel sem varius finibus. Sed ornare ali amet tram sed
-      viverra. In vel uma quis libero viverra focilisis ut ac eit. Morbi commodo, eros in dignissim tempus, locus odio
-      numum ougue. To tempur sem magna ouis tellus. Eliam enim eros; suscipit eu semper, o dictam ali amet elit. Iulner
-      reprises nisi aget enim gravida focilisis. Pellentesque borsari varius turpis vel pharetra. Ut enis justo,
-      consequat vitae elementum temper, aucuniam nec eros.
+      <app-personal-description shortDesc></app-personal-description>
     </p>
   </div>
 </div>
@@ -54,10 +39,10 @@
 <div
   class="sm:hidden absolute bottom-0 w-full px-6 py-6 text-white flex justify-between items-end flex-wrap bg-zinc-800/80 clip-diagonal-mobile min-h-[200px]">
   <div>
-    <p class="text-sm">Hi, I am</p>
+    <p class="text-sm">{{'HOME.HI' | translate }}</p>
     <h1 class="text-2xl font-bold">Gabriele Vantaggiato</h1>
     <p class="text-xs text-gray-300 mt-1">
-      Senior Front-end Developer
+      Senior Web Developer
     </p>
   </div>
   <div class="flex flex-col gap-7">

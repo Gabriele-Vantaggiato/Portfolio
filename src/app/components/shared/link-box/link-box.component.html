@@ -1,11 +1,11 @@
 <div class="div-section-spaced">
   @if (redirectUrl && redirectUrl.length) {
     <div class="border-5 border-black p-5 w-90 text-center cursor-pointer hover-active mb-5" [routerLink]="'../' + redirectUrl">
-      <span class="font-bold text-2xl tracking-[7px]">{{ title | uppercase }}</span>
+      <span class="font-bold text-2xl tracking-[7px]">{{ title | translate | uppercase}}</span>
     </div>
   } @else {
     <div class="border-5 border-black p-5 w-90 text-center">
-      <span class="font-bold text-2xl tracking-[7px]">{{ title | uppercase }}</span>
+      <span class="font-bold text-2xl tracking-[7px]">{{ title | translate | uppercase }}</span>
     </div>
   }
 </div>

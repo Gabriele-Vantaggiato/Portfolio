@@ -1,5 +1,5 @@
 import {IGenericWithImage} from './IGenericWithImage';
 
 export interface ISkill extends IGenericWithImage {
-  competence: 'USING' | 'LEARNING' | 'OTHER' | 'USED'
+  competence: 'SKILLS.USING_NOW' | 'SKILLS.LEARNING' | 'SKILLS.OTHER' | 'SKILLS.USED'
 }

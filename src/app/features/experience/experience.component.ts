@@ -4,13 +4,15 @@ import {LinkBoxComponent} from "../../components/shared/link-box/link-box.compon
 import {TimelineComponent} from './timeline/timeline.component';
 import {INIT_WORK_EXPERIENCE} from '../../constants';
 import {IExperience} from '../../models/IExperience';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experience',
   imports: [
     BlackSeparatorComponent,
     LinkBoxComponent,
-    TimelineComponent
+    TimelineComponent,
+    TranslatePipe
   ],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'

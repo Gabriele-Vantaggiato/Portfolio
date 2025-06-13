@@ -1,11 +1,11 @@
-<app-link-box [title]="'ABOUT ME'"></app-link-box>
+<app-link-box [title]="'ABOUT_ME.TITLE'"></app-link-box>
 <div class="div-section-spaced">
   <app-personal-description></app-personal-description>
 </div>
 <div class="div-section-spaced">
   <div class="vertical-black-bar"></div>
   <div class="font-semibold text-xl tracking-[1px] mx-10">
-    EXPLORE
+    {{ 'ABOUT_ME.EXPLORE' | translate}}
   </div>
   <div class="vertical-black-bar"></div>
 </div>
@@ -24,5 +24,5 @@
   }
 </div>
 
-<app-link-box [title]="'SKILLS'" [redirectUrl]="'skills'"></app-link-box>
+<app-link-box [title]="'SKILLS.TITLE'" [redirectUrl]="'skills'"></app-link-box>
 <br>
