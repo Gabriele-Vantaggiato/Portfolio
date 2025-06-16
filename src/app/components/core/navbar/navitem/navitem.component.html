@@ -1,1 +1,1 @@
-<a (click)="toggleMenu.emit()" [routerLink]="['../' + href]" [ngClass]="last ? 'active-nav-item' : ''">{{title | translate}}</a>
+<a (click)="toggleMenu.emit()" [routerLink]="['../' + href]" routerLinkActive="active-nav-item">{{title | translate}}</a>

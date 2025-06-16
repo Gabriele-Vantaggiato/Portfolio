@@ -2,6 +2,7 @@ import {IServices} from './models/IServices';
 import {ISkill} from './models/ISkill';
 import {ICertifications} from './models/ICertifications';
 import {IExperience} from './models/IExperience';
+import {ISocialIcon} from './models/ISocialIcon';
 
 export const INIT_SERVICE: IServices[] = [
   {
@@ -126,4 +127,10 @@ export const INIT_WORK_EXPERIENCE: IExperience[] = [
       'EXPERIENCE.CTO.DESCRIPTION.TIMELINE_5',
     ]
   }
+]
+
+export const INIT_SOCIAL_ICONS: ISocialIcon[] = [
+  {url: 'https://github.com/Gabriele-Vantaggiato?tab=overview&from=2025-05-01&to=2025-05-31', imgPath: 'https://img.icons8.com/ios-filled/24/ffffff/github.png', alt: 'github'},
+  {url: '../contact', imgPath: 'https://img.icons8.com/ios-filled/24/ffffff/email.png', alt: 'email'},
+  {url: 'https://www.linkedin.com/in/gabriele-vantaggiato-29b586183', imgPath: 'https://img.icons8.com/ios-filled/24/ffffff/linkedin.png', alt: 'linkedin'}
 ]
