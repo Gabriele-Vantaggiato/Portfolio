@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {HlmButtonDirective} from '@spartan-ng/ui-button-helm';
+import {HlmButtonDirective} from '@spartan-ng/helm/button';
 import NavbarComponent from '../core/navbar/navbar.component';
 import {RouterLink} from '@angular/router';
 import {TranslatePipe} from '@ngx-translate/core';
