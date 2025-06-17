@@ -25,7 +25,7 @@
     "@ngx-translate/core": "^16.0.4",
     "@ngx-translate/http-loader": "^16.0.1",
     "@spartan-ng/brain": "0.0.1-alpha.465",
-    "@tailwindcss/postcss": "4.1.7",
+    "@tailwindcss/postcss": "^4.1.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-angular": "19.0.0",
@@ -34,9 +34,11 @@
     "ngx-sonner": "^3.1.0",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
-    "tailwindcss": "4.1.7",
+    "tailwindcss": "^4.1.7",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.8",
@@ -50,8 +52,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "tailwind-merge": "2.2.0",
-    "tailwindcss-animate": "1.0.6",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.6",
     "typescript": "~5.7.2"
   }
 }
