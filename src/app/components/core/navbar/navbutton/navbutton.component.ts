@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-//TODO: per deploy mettere il path per intero
-// import {HlmButtonDirective} from '../../../../../../libs/ui/ui-button-helm/src/lib/hlm-button.directive';
-import {HlmButtonDirective} from '@spartan-ng/helm/button';
+// TODO: per deploy mettere il path per intero
+import {HlmButtonDirective} from '../../../../../../libs/ui/ui-button-helm/src/lib/hlm-button.directive';
+// import {HlmButtonDirective} from '@spartan-ng/helm/button';
 import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
