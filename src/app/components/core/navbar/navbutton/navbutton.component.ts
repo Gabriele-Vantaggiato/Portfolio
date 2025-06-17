@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {HlmButtonDirective} from '@spartan-ng/helm/button';
+import {HlmButtonDirective} from '../../../../../../libs/ui/ui-button-helm/src/lib/hlm-button.directive';
 import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
