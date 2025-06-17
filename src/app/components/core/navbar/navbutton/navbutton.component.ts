@@ -18,5 +18,6 @@ import {TranslatePipe} from '@ngx-translate/core';
 })
 export class NavbuttonComponent {
     @Input() text = '';
+
     @Input() url = '';
 }
