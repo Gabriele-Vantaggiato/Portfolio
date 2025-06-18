@@ -1,11 +1,10 @@
-<div class="w-full bg-black p-3 justify-center md:flex hidden" [ngClass]="isHero ? 'md:flex-col' : 'md:flex-row'">
-  @for (r of routes; track $index;) {
+<div class="w-full bg-black p-3 justify-center md:flex hidden" [ngClass]="isHero ? 'flex-wrap' : 'md:flex-row'">
+  @for (r of routes; track $index; let first = $first;) {
     @if (r.path?.length) {
-      <app-navbutton [text]="r.data ? r.data['title'] : 'No title'" [url]="r.path ? r.path : ''"></app-navbutton>
+      <app-navbutton [text]="r.data ? r.data['title'] : 'No title'" [url]="r.path ? r.path : ''" [ngClass]="{'ps-10': first}"></app-navbutton>
     }
   }
 </div>
-
 
 <div class="flex justify-end md:hidden mb-20">
   <!-- Top bar -->
