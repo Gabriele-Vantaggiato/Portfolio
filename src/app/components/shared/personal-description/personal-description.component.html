@@ -1,9 +1,7 @@
-<div class="mx-5 sm:mx-10 md:mx-20">
-  <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION1' | translate">
-  </p>
+<div class="mx-5 sm:mx-10 md:mx-20" [routerLink]="shortDesc ? '../about' : null" [ngClass]="{'cursor-pointer': shortDesc}">
+  <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION1' | translate"></p>
   @if (!shortDesc) {
     <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION2' | translate"></p>
-
     <p class="mb-5" [innerHTML]="'PERSONAL_DESCRIPTION.SECTION3' | translate"></p>
     <p [innerHTML]="'PERSONAL_DESCRIPTION.SECTION4' | translate"></p>
   }
