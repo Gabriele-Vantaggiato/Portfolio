@@ -85,6 +85,13 @@ export const INIT_CERTIFICATIONS: ICertifications[] = [
     imgSrc: default_img_certifications_path + 'angular_intermediate_certificate.jpg',
     pdfSrc: default_pdf_certifications_path + 'angular_intermediate_certificate.pdf',
     category: 'fe'
+  },
+  {
+    id: 'html_css_intermediate',
+    name: 'HTML/CSS Intermediate',
+    imgSrc: default_img_certifications_path + 'html_css_intermediate_matchguru_certificate.png',
+    pdfSrc: default_pdf_certifications_path + 'html_css_intermediate_matchguru_certificate.pdf',
+    category: 'fe'
   }
 ]
 
